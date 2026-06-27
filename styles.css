@@ -186,6 +186,56 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
 @keyframes cue { 0% { opacity: 0; transform: translate(-50%, 0); } 40% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, 11px); } }
 
 /* ============================================================
+   PARTNER SLIDER
+   ============================================================ */
+.section-partners {
+  background: var(--bg);
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  position: relative;
+}
+.section-partners::before, .section-partners::after {
+  content: ""; position: absolute; top: 0; bottom: 0; width: 100px; z-index: 2; pointer-events: none;
+}
+.section-partners::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+.section-partners::after { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
+
+.partner-slider {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.partner-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scrollMarquee 35s linear infinite;
+  padding-left: 60px;
+}
+.partner-track:hover { animation-play-state: paused; }
+
+.partner-logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  filter: grayscale(100%) opacity(40%);
+  transition: filter 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.partner-logo:hover {
+  filter: grayscale(100%) opacity(100%);
+  transform: scale(1.05);
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================================
    SECTIONS (shared)
    ============================================================ */
 .section { padding: clamp(72px, 11vw, 140px) 0; }
