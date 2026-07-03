@@ -3,8 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KALMS — Flightcase-Manufaktur seit 1978</title>
-  <meta name="description" content="KALMS baut Transportkoffer und Flightcases nach Maß. Einzelfertigung, Prototypen und Kleinserien aus Hannover — robust durchs eigene Profil- und Ecken-System, mit 3 Jahren Garantie." />
+  <title>Flightcases nach Maß aus Hannover — KALMS Flightcase-Manufaktur seit 1978</title>
+  <meta name="description" content="KALMS baut Flightcases und Transportkoffer nach Maß: Einzelfertigung, Prototypen und Kleinserien aus Hannover. Genietet ins eigene Profil statt ins Holz — 3 Jahre Garantie auf jedes Case." />
+  <meta name="theme-color" content="#0b0c0e" />
+  <!-- Canonical/OG-URLs auf kalms.de umstellen, sobald die Domain aufs Vercel-Projekt zeigt -->
+  <link rel="canonical" href="https://kalms-orpin.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="KALMS Flightcase" />
+  <meta property="og:title" content="Flightcases nach Maß aus Hannover — KALMS" />
+  <meta property="og:description" content="Einzelfertigung, Prototypen und Kleinserien. Genietet ins eigene Profil statt ins Holz — 3 Jahre Garantie auf jedes Case." />
+  <meta property="og:url" content="https://kalms-orpin.vercel.app/" />
+  <meta property="og:image" content="https://kalms-orpin.vercel.app/assets/hero-case-fog.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Kalms Flightcase GmbH & Co. KG",
+    "alternateName": "KALMS Flightcase-Manufaktur",
+    "description": "Flightcases und Transportkoffer nach Maß: Einzelfertigung, Prototypen und Kleinserien aus Hannover. 3 Jahre Garantie durch eigenes Profil- und Ecken-System.",
+    "foundingDate": "1978",
+    "url": "https://kalms-orpin.vercel.app/",
+    "telephone": "+49-511-3728104",
+    "email": "t.schrickel@kalms.de",
+    "image": "https://kalms-orpin.vercel.app/assets/hero-case-fog.jpg",
+    "logo": "https://kalms-orpin.vercel.app/assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Junkersstraße 14",
+      "postalCode": "30179",
+      "addressLocality": "Hannover",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "16:00"
+    },
+    "areaServed": "DE",
+    "knowsAbout": ["Flightcases", "Transportkoffer", "19-Zoll-Racks", "Prototypenbau", "Einzelfertigung", "Kleinserien"]
+  }
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,7 +95,7 @@
     <div class="container hero-content">
       <p class="eyebrow">Flightcase-Manufaktur · Hannover<br />seit 1978</p>
       <h1>Überzeugt, bevor<br />es geöffnet wird.</h1>
-      <p class="lede">Ein KALMS Flightcase ist keine 0815-Box. Unsere unverkennbaren Profile und Ecken geben Ihrem Equipment einen edlen Rahmen, der sich sofort abhebt – Ihr Produkt wirkt bereits beim Auspacken.</p>
+      <p class="lede">Ein KALMS Flightcase ist keine 08/15-Box. Unsere unverkennbaren Profile und Ecken geben Ihrem Equipment einen edlen Rahmen, der sich sofort abhebt — Ihr Produkt wirkt schon beim Auspacken.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#kontakt">Anfrage starten</a>
         <a class="btn btn-ghost" href="#qualitaet">Was uns ausmacht</a>
@@ -64,7 +105,8 @@
   </section>
 
   <!-- ============ PARTNER-SLIDER ============ -->
-  <section class="section-partners">
+  <!-- hidden, bis echte Kundenlogos in assets/ liegen — dann hidden-Attribut entfernen und Spans durch <img> ersetzen -->
+  <section class="section-partners" hidden>
     <div class="partner-slider">
       <div class="partner-track">
         <!-- Logos 2x für nahtlosen Loop -->
@@ -90,12 +132,12 @@
     <div class="container">
       <p class="kicker">Der Unterschied</p>
       <h2 class="hook-headline">Genietet ins Profil.<br />Nicht ins Holz.</h2>
-      <p class="hook-sub">Wo andere ins Holz nieten, leiert das Case mit der Zeit aus. Wir nieten in unser eigenes Profil und setzen unsere selbst gefertigten Ecken — die Stelle, die sonst zuerst nachgibt. Das Ergebnis: ein Case, das hält.</p>
+      <p class="hook-sub">Wo andere ins Holz nieten, leiert das Case mit der Zeit aus. Wir nieten direkt in unsere stabilen, selbst entwickelten Profile und setzen eigene Ecken genau dort, wo ein Case sonst zuerst nachgibt. Das Ergebnis: ein Case, das hält.</p>
 
       <div class="hook-grid">
         <div class="hook-card">
           <span class="hook-num">3 Jahre</span>
-          <p>Garantie auf jedes Case — möglich durch unser Profil- und Ecken-System.</p>
+          <p>Garantie auf jedes Case — möglich durch unser erprobtes Profil- und Ecken-System aus eigener Fertigung.</p>
         </div>
         <div class="hook-card">
           <span class="hook-num">Einzelstück</span>
@@ -103,7 +145,7 @@
         </div>
         <div class="hook-card">
           <span class="hook-num">Nachhaltig</span>
-          <p>Unsere Cases sind für die Ewigkeit gebaut. Dank Full-Service reparieren oder bauen wir sie jederzeit für neues Equipment um, statt sie zu entsorgen.</p>
+          <p>Unsere Cases sind für die Ewigkeit gebaut. Dank Full-Service reparieren wir sie jederzeit — oder bauen sie für Ihr neues Equipment um.</p>
         </div>
       </div>
     </div>
@@ -116,7 +158,7 @@
         <p class="kicker">Einzelfertigung</p>
         <h2>Unschlagbar im Einzelstück.</h2>
         <p>Große Mengen in kurzer Zeit können andere. Unsere Stärke ist das Gegenteil: das eine Case, das genau passt — und die individuelle Anpassung, die kein Katalog hergibt.</p>
-        <p>Vom Prototyp für die Forschungsabteilung bis zur Kleinserie, die jeden Monat in die Welt geht: jedes Stück wird bei uns von Grund auf entwickelt.</p>
+        <p>Vom Prototypen für die Forschungsabteilung bis zur Kleinserie, die jeden Monat in die Welt geht: Jedes Stück wird bei uns von Grund auf entwickelt.</p>
       </div>
       <div class="split-media" data-img="werkstatt"></div>
     </div>
@@ -147,7 +189,7 @@
         <article class="solution-card">
           <div class="solution-img" data-img="loesung-sonder"></div>
           <h3>Sonderlösungen</h3>
-          <p>Geht nicht gibt's nicht. Wenn Standard nicht reicht, entwickeln wir die passgenaue Lösung.</p>
+          <p>Von der Harfe bis zur mobilen Drohnenabwehr: Wir machen alles transportsicher — auch das, was in keinen Katalog passt.</p>
         </article>
       </div>
     </div>
@@ -165,7 +207,7 @@
         </div>
         <div class="material-item">
           <h3>Farben &amp; Oberflächen</h3>
-          <p>PVC-Beschichtung, RAL-Farben, Di-Bond, Waben und Sondermaterialien nach Wunsch.</p>
+          <p>PVC-Beschichtung, RAL-Farben, Dibond, Waben und Sondermaterialien nach Wunsch.</p>
         </div>
         <div class="material-item">
           <h3>19-Zoll-Technik</h3>
@@ -245,7 +287,7 @@
         <div class="contact-block">
           <h3>Ansprechpartner</h3>
           <p>Thomas Schrickel — Geschäftsführung<br /><a href="mailto:t.schrickel@kalms.de">t.schrickel@kalms.de</a></p>
-          <p>Ismail Tuzhaev — Produktion &amp; Konstruktion<br /><a href="mailto:i.tuzhaev@kalms.de">i.tuzhaev@kalms.de</a></p>
+          <p>Ismael Tuzhaev — Produktion &amp; Konstruktion<br /><a href="mailto:i.tuzhaev@kalms.de">i.tuzhaev@kalms.de</a></p>
         </div>
       </div>
     </div>
