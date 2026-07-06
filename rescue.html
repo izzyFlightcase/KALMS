@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KALMS Rescue — Humanitarian Logistics &amp; Notfalleinsatz-Cases</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+  </noscript>
+  <style>
+    .rescue-hero {
+      padding-top: 160px;
+      padding-bottom: 100px;
+      background: linear-gradient(180deg, #101216 0%, #0b0c0e 100%);
+      border-bottom: 1px solid var(--line);
+    }
+    .rescue-hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      margin-bottom: 20px;
+    }
+    .rescue-hero p.lead {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      color: var(--muted);
+      max-width: 60ch;
+      margin-bottom: 30px;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .spec-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+    .spec-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: var(--accent);
+    }
+    .spec-card p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    @media (max-width: 768px) {
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header scrolled">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="KALMS Flightcase — Startseite">
+        <img src="assets/logo.png" alt="KALMS Flightcase" class="brand-logo" />
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html#loesungen">Loesungen</a>
+        <a href="index.html#standard">Standard-Cases</a>
+        <a href="index.html#qualitaet">Konstruktion</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+495113728104">
+        <span class="dot"></span> Jetzt anrufen
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="rescue-hero">
+    <div class="container">
+      <p class="kicker">Humanitarian &amp; Medical</p>
+      <h1>Logistik fuer den Hilfseinsatz.</h1>
+      <p class="lead">
+        Leichte, stapelbare und IATA-konforme Spezial-Cases fuer medizinische Hilfsausruestung, mobile Labore und Katastrophenschutz. Schnell einsatzbereit, hygienisch, langlebig.
+      </p>
+      <a class="btn btn-primary" href="index.html#kontakt">Bedarf besprechen</a>
+    </div>
+  </section>
+
+  <!-- ============ SPECS SECTION ============ -->
+  <section class="section">
+    <div class="container">
+      <p class="kicker">Eigenschaften</p>
+      <h2>Zuverlaessig bei jedem Wetter.</h2>
+      
+      <div class="specs-grid">
+        <div class="spec-card">
+          <h3>Gewichts-Reduzierung</h3>
+          <p>Verwendung moderner Wabenstruktur-Platten (Con-Pearl) zur extremen Gewichtsreduzierung bei gleichbleibender Stabilitaet — ideal fuer Luftfracht-Anforderungen.</p>
+        </div>
+        <div class="spec-card">
+          <h3>Hygiene &amp; Reinigung</h3>
+          <p>Passgenau gefraeste Polyethylen-Hartschaumstoff-Inlays sind geschlossen-zellig, nehmen keine Fluessigkeiten auf und lassen sich steril reinigen.</p>
+        </div>
+        <div class="spec-card">
+          <h3>Stapel-Sicherheit</h3>
+          <p>Integriertes Stapelschalen-System (Penn Elcom) sorgt fuer rutschfeste Lagerung und sicheren Transport bei hoher Stapelung im LKW oder Flugzeug.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STANDARDS SECTION ============ -->
+  <section class="section" style="background: var(--bg-2); border-block: 1px solid var(--line);">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <p class="kicker">Partner fuer Hilfsorganisationen</p>
+      <h2>Standardisierte &amp; custom Loesungen.</h2>
+      <p style="color: var(--muted); font-size: 1.1rem; margin-bottom: 30px; line-height: 1.7;">
+        Wir liefern sowohl standardisierte Transportkisten fuer den schnellen Einsatz als auch massgeschneiderte Sonderloesungen fuer mobile Laborgeraete, Funk- und Notstrom-Einheiten.
+      </p>
+      <a class="btn btn-ghost" href="index.html#kontakt">Ansprechpartner kontaktieren</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="KALMS Flightcase" class="footer-logo" />
+      <nav class="footer-nav" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </nav>
+      <span class="footer-copy">© <span data-year>2026</span> Kalms Flightcase GmbH &amp; Co. KG</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

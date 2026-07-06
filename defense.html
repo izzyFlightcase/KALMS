@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KALMS Defense — Mobile Systeme &amp; Militär-Flightcases</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" />
+  </noscript>
+  <style>
+    .defense-hero {
+      padding-top: 160px;
+      padding-bottom: 100px;
+      background: linear-gradient(180deg, #101216 0%, #0b0c0e 100%);
+      border-bottom: 1px solid var(--line);
+    }
+    .defense-hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      margin-bottom: 20px;
+    }
+    .defense-hero p.lead {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      color: var(--muted);
+      max-width: 60ch;
+      margin-bottom: 30px;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .spec-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+    .spec-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: var(--accent);
+    }
+    .spec-card p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    @media (max-width: 768px) {
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header scrolled">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="KALMS Flightcase — Startseite">
+        <img src="assets/logo.png" alt="KALMS Flightcase" class="brand-logo" />
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html#loesungen">Loesungen</a>
+        <a href="index.html#standard">Standard-Cases</a>
+        <a href="index.html#qualitaet">Konstruktion</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <a class="btn btn-call" href="tel:+495113728104">
+        <span class="dot"></span> Jetzt anrufen
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="defense-hero">
+    <div class="container">
+      <p class="kicker">Security &amp; Tactical</p>
+      <h1>Robuste Transport-Loesungen.</h1>
+      <p class="lead">
+        Entwicklung und Fertigung hochfester Casing-Systeme fuer mobile Elektronik, Aufklaerungstechnik und taktische Einsatzmittel. Stoßabsorbierend, vibrationsfest, praezise.
+      </p>
+      <a class="btn btn-primary" href="index.html#kontakt">Konstruktions-Gespraech vereinbaren</a>
+    </div>
+  </section>
+
+  <!-- ============ SPECS SECTION ============ -->
+  <section class="section">
+    <div class="container">
+      <p class="kicker">Spezifikationen</p>
+      <h2>Konstruiert fuer den Ernstfall.</h2>
+      
+      <div class="specs-grid">
+        <div class="spec-card">
+          <h3>Vibrations-Schutz</h3>
+          <p>Stoßdaempfende Schwingungskaefige (Shock-Absorber-Cages) zum Schutz empfindlicher 19-Zoll-Systeme, Server-Hardware und IT-Komponenten.</p>
+        </div>
+        <div class="spec-card">
+          <h3>Echte Nieten-Verbindung</h3>
+          <p>Unsere Ecken und Profile werden direkt ineinander genietet, statt nur ins Sperrholz. Kein Loesen von Verbindungen bei extremen Vibrationen im Gelaende.</p>
+        </div>
+        <div class="spec-card">
+          <h3>Drohnen-Transport</h3>
+          <p>Individuell angepasste Transportboxen für Aufklaerungs- und Transportdrohnen mit passgenau gefraesten Polyethylen-Hartschaum-Inlays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROTOTYPING SECTION ============ -->
+  <section class="section" style="background: var(--bg-2); border-block: 1px solid var(--line);">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <p class="kicker">Entwicklung &amp; Speed</p>
+      <h2>Prototyping in 5 Werktagen.</h2>
+      <p style="color: var(--muted); font-size: 1.1rem; margin-bottom: 30px; line-height: 1.7;">
+        Wir verstehen den Zeitdruck im F&amp;E-Bereich. CAD-Konstruktionen werden innerhalb kuerzester Zeit abgestimmt, Prototypen bauen wir in Rekordzeit an unserem Standort in Hannover.
+      </p>
+      <a class="btn btn-ghost" href="index.html#kontakt">Direkter Kontakt zur Entwicklung</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="KALMS Flightcase" class="footer-logo" />
+      <nav class="footer-nav" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </nav>
+      <span class="footer-copy">© <span data-year>2026</span> Kalms Flightcase GmbH &amp; Co. KG</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

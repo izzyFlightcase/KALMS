@@ -6,11 +6,13 @@
 
   /* ---- Sticky header state ---- */
   var header = document.querySelector(".site-header");
-  function onScroll() {
-    header.classList.toggle("scrolled", window.scrollY > 8);
+  if (header) {
+    var onScroll = function () {
+      header.classList.toggle("scrolled", window.scrollY > 8);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
   }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
 
   /* ---- Mobile nav ---- */
   var toggle = document.querySelector(".nav-toggle");
