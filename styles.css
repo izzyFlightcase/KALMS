@@ -22,6 +22,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 86px; }
 
 body {
   font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -269,6 +270,35 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
 
 /* ---------- Standard-Cases / Carousel ---------- */
 .section-standard { background: var(--bg-2); border-block: 1px solid var(--line); }
+.stock-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  margin-top: 42px;
+  padding: clamp(26px, 4vw, 42px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.stock-copy h3 {
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  margin-bottom: 18px;
+}
+.stock-copy p {
+  color: var(--muted);
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+.stock-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
 .carousel { margin-top: 44px; }
 .carousel-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
 .tab {
@@ -342,7 +372,7 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
    ============================================================ */
 @media (max-width: 980px) {
   .hook-grid, .solutions-grid, .material-grid { grid-template-columns: repeat(2, 1fr); }
-  .split-grid, .contact-grid { grid-template-columns: 1fr; }
+  .split-grid, .contact-grid, .stock-grid { grid-template-columns: 1fr; }
   .split-media { aspect-ratio: 16 / 10; }
 }
 @media (max-width: 720px) {
