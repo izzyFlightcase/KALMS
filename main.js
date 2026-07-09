@@ -52,7 +52,7 @@
   /* ---- Reveal-on-scroll (only when JS runs → no-JS stays visible) ---- */
   if ("IntersectionObserver" in window) {
     var targets = document.querySelectorAll(
-      ".section h2, .kicker, .hook-card, .solution-card, .material-item, .split-text, .split-media, .contact-block, .hero-content > *"
+      ".section h2, .kicker, .hook-card, .solution-card, .material-item, .faq-item, .split-text, .split-media, .contact-block, .hero-content > *"
     );
     targets.forEach(function (el) { el.setAttribute("data-reveal", ""); });
     var io = new IntersectionObserver(function (entries) {
