@@ -52,7 +52,7 @@
   /* ---- Reveal-on-scroll (only when JS runs → no-JS stays visible) ---- */
   if ("IntersectionObserver" in window) {
     var targets = document.querySelectorAll(
-      ".section h2, .kicker, .hook-card, .solution-card, .material-item, .faq-item, .split-text, .split-media, .contact-block, .hero-content > *"
+      ".section h2, .kicker, .hook-card, .solution-card, .material-item, .process-step, .faq-item, .split-text, .split-media, .quote-checklist, .contact-block, .hero-content > *"
     );
     targets.forEach(function (el) { el.setAttribute("data-reveal", ""); });
     var io = new IntersectionObserver(function (entries) {
@@ -72,12 +72,13 @@
      and it appears automatically — no HTML editing needed.
      Tries .jpg, then .webp, then .png. ------------------------------- */
   var EXT = [".jpg", ".webp", ".png"];
+  var assetBase = window.location.pathname.indexOf("/en/") !== -1 ? "../assets/" : "assets/";
   function tryLoad(name, onFound) {
     var i = 0;
     (function next() {
       if (i >= EXT.length) return;
       var img = new Image();
-      var src = "assets/" + name + EXT[i++];
+      var src = assetBase + name + EXT[i++];
       img.onload = function () { onFound(src); };
       img.onerror = next;
       img.src = src;

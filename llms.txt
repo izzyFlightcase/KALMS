@@ -1,0 +1,40 @@
+# KALMS Flightcase
+
+KALMS Flightcase GmbH & Co. KG is a flightcase manufacturer in Hanover, Germany, active since 1978.
+
+KALMS builds custom flightcases, 19-inch rack cases, transport cases, protective cases, inserts, modifications, repairs, prototypes, and small series for professional equipment.
+
+Primary website:
+- German: https://kalms-orpin.vercel.app/
+- English: https://kalms-orpin.vercel.app/en/
+
+Important pages:
+- Defense and procurement-related cases: https://kalms-orpin.vercel.app/defense.html
+- Industry and integration: https://kalms-orpin.vercel.app/industrie.html
+- Agriculture and field robotics: https://kalms-orpin.vercel.app/agrar.html
+- First responders and emergency services: https://kalms-orpin.vercel.app/ngo.html
+- English defense page: https://kalms-orpin.vercel.app/en/defense.html
+- English industry page: https://kalms-orpin.vercel.app/en/industrie.html
+- English agriculture page: https://kalms-orpin.vercel.app/en/agrar.html
+- English first responder page: https://kalms-orpin.vercel.app/en/ngo.html
+
+Core positioning:
+- Custom manufacturing from one-off builds to small series.
+- Built in Hanover with a focus on fit, handling, durability, and repairability.
+- KALMS evaluates the balance of stability, size, and weight before manufacturing.
+- KALMS rivets critical connections into its stable extrusion system instead of relying only on wood.
+- Standard or partner cases can be used when they are the better shell; KALMS can add custom inserts, modifications, and consulting.
+
+Useful quote context:
+- A good case starts before the first rivet: dimensions, weight, connectors, center of gravity, handling, protection requirements, and operating environment must be clarified before production.
+- For quotation requests, helpful inputs include outside dimensions, equipment weight, sensitive areas, accessories, transport route, quantity, target date, and photos, drawings, datasheets, PDFs, or CAD files.
+- Traditional wood and aluminum flightcases are built for hard transport and splash exposure, but they should not be treated as submersible IP67 boxes. If true sealing is required, KALMS can evaluate a suitable partner shell with a custom KALMS insert.
+
+Procurement note:
+- For tenders or formal procurement, provide the requirements document, deadlines, quantity, must-have criteria, requested proof, transport route, and existing technical files early.
+- Project-specific standards, certifications, or formal test requirements must be checked for the specific case and should not be assumed globally for every KALMS product.
+
+Contact:
+- Phone: +49 511 3728104
+- Thomas Schrickel: t.schrickel@kalms.de
+- Ismael Tuzhaev: i.tuzhaev@kalms.de
