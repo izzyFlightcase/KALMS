@@ -8,6 +8,9 @@
   <meta name="theme-color" content="#0b0c0e" />
   <!-- Canonical/OG-URLs auf kalms.de umstellen, sobald die Domain aufs Vercel-Projekt zeigt -->
   <link rel="canonical" href="https://kalms-orpin.vercel.app/" />
+  <link rel="alternate" hreflang="de" href="https://kalms-orpin.vercel.app/" />
+  <link rel="alternate" hreflang="en" href="https://kalms-orpin.vercel.app/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://kalms-orpin.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="de_DE" />
   <meta property="og:site_name" content="KALMS Flightcase" />
@@ -73,6 +76,10 @@
         <a href="#kontakt">Kontakt</a>
       </nav>
 
+      <div class="lang-switch" style="margin-right: 20px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.05em;">
+        <span style="color: var(--accent);">DE</span> <span style="color: var(--muted); margin: 0 5px;">|</span> <a href="en/index.html" style="color: var(--muted); text-decoration: none; transition: color 0.2s ease;">EN</a>
+      </div>
+
       <a class="btn btn-call" href="tel:+495113728104">
         <span class="dot"></span> Jetzt anrufen
       </a>
@@ -87,6 +94,7 @@
       <a href="#loesungen">Lösungen</a>
       <a href="#standard">Standard-Cases</a>
       <a href="#kontakt">Kontakt</a>
+      <a href="en/index.html">English</a>
       <a class="mobile-call" href="tel:+495113728104">Jetzt anrufen</a>
     </nav>
   </header>
@@ -95,7 +103,7 @@
   <section class="hero">
     <div class="hero-media" role="img" aria-label="Schwarzes Flightcase im Nebel"></div>
     <div class="container hero-content">
-      <p class="eyebrow">KALMS Flightcase-Manufaktur aus Hannover<br />seit 1978</p>
+      <p class="eyebrow">KALMS Flightcase-Manufaktur aus Hannover<br />Handcrafted in Germany · seit 1978</p>
       <h1>Form. Funktion.<br />Schutz.</h1>
       <p class="lede">Erst das optimale Verhältnis aus Stabilität, Größe und Gewicht. Dann handwerklich vollendet.</p>
       <div class="hero-actions">
@@ -179,19 +187,25 @@
           <p>Show-, Studio- und Übertragungstechnik — vom Festival bis zum Ü-Wagen.</p>
         </article>
         <article class="solution-card">
-          <div class="solution-img" data-img="loesung-industrie"></div>
-          <h3>Industrie</h3>
-          <p>19-Zoll-Racks, Mess- und Stromtechnik, mobile Stationen für Forschung &amp; Entwicklung.</p>
+          <a href="industrie.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="solution-img" data-img="loesung-industrie" style="background-image: url('assets/industry_hero.png'); background-size: cover; background-position: center;"></div>
+            <h3>Industrie & Integration</h3>
+            <p>19-Zoll-Racks, Mess- und Stromtechnik, mobile Stationen für F&amp;E. Wir sind der NRE-Partner für komplexe Systemintegration.</p>
+          </a>
         </article>
         <article class="solution-card">
-          <div class="solution-img" data-img="loesung-automotive"></div>
-          <h3>Automotive</h3>
-          <p>Fahrzeug- und Sonderausbauten mit optimaler Gewichtsreduzierung nach Norm.</p>
+          <a href="agrar.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="solution-img" data-img="loesung-agrar" style="background-image: url('assets/agri_hero.png'); background-size: cover; background-position: center;"></div>
+            <h3>Agrar- & Feldrobotik</h3>
+            <p>Robuste Transportlösungen für Agrar-Drohnen, Bodenanalyse-Kits und Autonomik. Schmutzresistent außen, hochpräzise innen.</p>
+          </a>
         </article>
         <article class="solution-card">
-          <div class="solution-img" data-img="loesung-sonder"></div>
-          <h3>Sonderlösungen</h3>
-          <p>Ob empfindliche Messtechnik oder der Kühlschrank fürs Motorsport-Team: Wir machen alles transportsicher — auch das, was in keinen Katalog passt.</p>
+          <a href="ngo.html" style="text-decoration: none; color: inherit; display: block;">
+            <div class="solution-img" data-img="loesung-sonder" style="background-image: url('assets/ngo_hero.png'); background-size: cover; background-position: center;"></div>
+            <h3>BOS & Sonderlösungen</h3>
+            <p>Behörden, Rettungsdienste und NGOs. Wir machen alles transportsicher — auch das, was in keinen Katalog passt.</p>
+          </a>
         </article>
       </div>
     </div>
