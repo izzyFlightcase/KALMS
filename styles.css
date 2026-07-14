@@ -258,7 +258,7 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
 .hook-card p { color: var(--muted); font-size: 0.98rem; }
 
 /* ---------- Lösungen ---------- */
-.solutions-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 48px; }
+.solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 48px; }
 .solution-card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   overflow: hidden; transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
@@ -325,6 +325,7 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
 .carousel-track::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
 
 .case-card { scroll-snap-align: start; }
+a.case-card:hover span { color: var(--text); }
 .case-img {
   aspect-ratio: 4 / 3; border-radius: var(--radius); background: var(--surface-2);
   border: 1px solid var(--line); margin-bottom: 14px;
@@ -342,9 +343,24 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
   background: #fff;
 }
 .partner-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background:
     linear-gradient(135deg, rgba(96, 203, 255, 0.12), rgba(255, 255, 255, 0.02)),
     var(--surface-2);
+}
+.partner-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: 0.14em;
 }
 .case-card span { color: var(--muted); font-size: 0.92rem; font-weight: 600; }
 
@@ -395,6 +411,7 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
 
 /* ---------- FAQ ---------- */
 .section-faq { background: var(--bg); border-top: 1px solid var(--line); }
+.faq-page { padding-top: 140px; }
 .faq-grid {
   display: grid;
   grid-template-columns: minmax(260px, 0.82fr) 1.18fr;
@@ -405,11 +422,14 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
   position: sticky;
   top: 110px;
 }
+.faq-intro h1,
 .faq-intro h2 { margin: 6px 0 18px; }
+.faq-intro h1 { font-size: clamp(2.2rem, 5vw, 4.1rem); }
 .faq-intro p {
   color: var(--muted);
   font-size: 1.05rem;
   max-width: 42ch;
+  margin-bottom: 26px;
 }
 .faq-list {
   display: grid;
