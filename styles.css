@@ -258,7 +258,7 @@ h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
 .hook-card p { color: var(--muted); font-size: 0.98rem; }
 
 /* ---------- Lösungen ---------- */
-.solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 48px; }
+.solutions-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 48px; }
 .solution-card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
   overflow: hidden; transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
@@ -404,7 +404,7 @@ a.case-card:hover span { color: var(--text); }
 .split-media { aspect-ratio: 4 / 5; border-radius: var(--radius); background: var(--surface-2); border: 1px solid var(--line); }
 
 /* ---------- Material ---------- */
-.material-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 48px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.material-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 48px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .material-item { background: var(--bg); padding: 34px 28px; }
 .material-item h3 { margin-bottom: 12px; }
 .material-item p { color: var(--muted); font-size: 0.95rem; }
